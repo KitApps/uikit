@@ -242,9 +242,6 @@ img {
     /* 1 */
     max-width: 100%;
     height: auto;
-    .chrome48 &
-        max-height: 100%; //fix chrome 48 issue
-    
     /* 2 */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -252,6 +249,10 @@ img {
     border: 0;
     /* 4 */
     vertical-align: middle;
+}
+
+.chrome48 img {
+    max-height: 100%; //fix chrome 48 issue
 }
 
 /*
