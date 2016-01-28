@@ -242,7 +242,9 @@ img {
     /* 1 */
     max-width: 100%;
     height: auto;
-    max-height: 100%; //fix chrome 48 issue
+    .chrome48 &
+        max-height: 100%; //fix chrome 48 issue
+    
     /* 2 */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
